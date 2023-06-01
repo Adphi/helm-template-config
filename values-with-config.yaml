@@ -1,0 +1,4 @@
+config:
+  host: my.service.cloud
+  port: 443
+  tls: true

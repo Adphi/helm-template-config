@@ -1,0 +1,7 @@
+{{ if not .Values.config }}# This is the default configuration file for the application.{{ end }}
+host: {{ .Values.config.host | default "localhost" }}
+port: {{ .Values.config.port | default 3000 }}
+tls: {{ .Values.config.tls | default false }}
+static:
+  key: value
+
